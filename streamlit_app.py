@@ -15,5 +15,5 @@ st.line_chart(
     x = 'date',
     y = ["zero", "low"],
     color=["#FF0000", "#0000FF"],
-    width = 1000, height = 1000  # Optional
+    width = 2000, height = 1000  # Optional
 )
