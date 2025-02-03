@@ -12,6 +12,7 @@ df['date'] = pd.to_datetime(df['date'], format='mixed')
 # st.line_chart(df['zero'],width = 1000, height = 1000)
 st.line_chart(
     df,
+    x = df['date']
     y = ["zero", "low"],
     color=["#FF0000", "#0000FF"],
     width = 1000, height = 1000  # Optional
