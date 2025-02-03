@@ -10,4 +10,4 @@ df = pd.read_csv("https://www.dropbox.com/scl/fi/wc92bzd29se8wv4rzam7w/gamma_ran
 df['date'] = pd.to_datetime(df['date'], format='mixed')
 df['date'] = df['date']
 df.index = df['date']
-st.line_chart(df['zero'])
+st.line_chart(df['zero'],width = 1000, height = 1000)
