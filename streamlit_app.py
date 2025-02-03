@@ -12,7 +12,7 @@ df.index = df['date']
 # st.line_chart(df['zero'],width = 1000, height = 1000)
 st.line_chart(
     df,
-    x = None,
+    x = df.index,
     y = ["zero", "low"],
     color=["#FF0000", "#0000FF"],
     width = 1000, height = 1000  # Optional
