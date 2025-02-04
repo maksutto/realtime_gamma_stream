@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import yfinance
+
 st.write("""
 GAVNA*
 """)
@@ -12,8 +12,7 @@ vanna_df_7dte = pd.read_csv('https://www.dropbox.com/scl/fi/c3qd9wv4ltbb3t8neobu
 vanna_df_7dte['date'] = pd.to_datetime(vanna_df_7dte['date'], format='mixed')
 vanna_df_7dte.index = vanna_df_7dte['date']   
 
-tick = yfinance.Ticker("^SPX")
-hist = tick.history(start=summ_voll["date"].tolist()[0], interval = "1d")
+full_df = pd.concat([df_7dte["zero"],df_7dte["low"],vanna_df_7dte["maxVanna"],vanna_df_7dte["minVanna"],vanna_df_7dte["zero"]],keys = ["zero","low","vamma_maxVanna","vamma_minVanna","vamma_zero"],axis = 1)
 
 st.line_chart(
     df_7dte,
