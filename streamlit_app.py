@@ -15,9 +15,9 @@ vanna_df_7dte.index = vanna_df_7dte['date']
 full_df = pd.concat([df_7dte["zero"],df_7dte["low"],vanna_df_7dte["maxVanna"],vanna_df_7dte["minVanna"],vanna_df_7dte["zero"]],keys = ["zero","low","vamma_maxVanna","vamma_minVanna","vamma_zero"],axis = 1)
 
 st.line_chart(
-    df_7dte,
+    full_df,
     x = 'date',
-    y = ["zero", "low"],
-    color=["#FF0000", "#0000FF"],
+    y = ["zero","low","vamma_maxVanna","vamma_minVanna","vamma_zero"],
+    # color=["#FF0000", "#0000FF"],
     width = 2000, height = 1000  # Optional
 )
