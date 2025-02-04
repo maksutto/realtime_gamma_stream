@@ -20,13 +20,13 @@ st.line_chart(
     vanna_df_7dte,
     x = 'date',
     y = ["zero","maxVanna","minVanna"],
-    color=["#FF0000"],
+    # color=["#FF0000"],
     width = 2000, height = 1000  # Optional
 )
 st.line_chart(
     df_7dte,
     x = 'date',
     y = ["zero","low"],
-    color=["#FF0000"],
+    # color=["#FF0000"],
     width = 2000, height = 1000  # Optional
 )
