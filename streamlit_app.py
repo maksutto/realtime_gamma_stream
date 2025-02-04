@@ -20,6 +20,6 @@ st.line_chart(
     full_df,
     x = None,
     y = ["vanna_zero"],
-    # color=["#FF0000", "#0000FF"],
+    color=["#FF0000"],
     width = 2000, height = 1000  # Optional
 )
