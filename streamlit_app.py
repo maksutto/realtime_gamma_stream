@@ -16,7 +16,7 @@ full_df = pd.concat([df_7dte["zero"],df_7dte["low"],vanna_df_7dte["maxVanna"],va
 
 st.line_chart(
     full_df,
-    x = 'date',
+    x = None,
     y = ["zero","low","vamma_maxVanna","vamma_minVanna","vamma_zero"],
     # color=["#FF0000", "#0000FF"],
     width = 2000, height = 1000  # Optional
