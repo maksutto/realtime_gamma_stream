@@ -15,7 +15,7 @@ vanna_df_7dte.index = vanna_df_7dte['date']
 vanna_df_7dte = vanna_df_7dte[vanna_df_7dte['date'] >= '2025-01-30']
 
 full_df = pd.concat([df_7dte["zero"],df_7dte["low"],vanna_df_7dte["maxVanna"],vanna_df_7dte["minVanna"],vanna_df_7dte["zero"]],keys = ["zero","low","vanna_maxVanna","vanna_minVanna","vanna_zero"],axis = 1)
-
+print(full_df)
 st.line_chart(
     vanna_df_7dte,
     x = 'date',
