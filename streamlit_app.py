@@ -18,7 +18,7 @@ full_df = pd.concat([df_7dte["zero"],df_7dte["low"],vanna_df_7dte["maxVanna"],va
 
 st.line_chart(
     vanna_df_7dte,
-    x = date,
+    x = 'date',
     y = ["zero"],
     color=["#FF0000"],
     width = 2000, height = 1000  # Optional
